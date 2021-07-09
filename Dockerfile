@@ -3,7 +3,7 @@ FROM python:3.7-slim AS compile-image
  
 # install dependencies of interest
 RUN python -m pip install rasa[spacy] && \
-    python -m spacy download en_core_web_lg
+    python -m spacy download en_core_web_md
  
 # set workdir and copy data files from disk
 # note the latter command uses .dockerignore
