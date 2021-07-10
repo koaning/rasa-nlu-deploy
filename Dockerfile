@@ -21,4 +21,4 @@ USER 1001
 ENTRYPOINT ["rasa"]
  
 # command to run when container is called to run
-CMD ["rasa", "run", "--enable-api", "--port", "8080"]
+CMD ["rasa", "run", "--enable-api", "--port", "$PORT"]
